@@ -120,4 +120,542 @@
   .btn-dl-ghost { display: inline-flex; align-items: center; gap: 10px; padding: 14px 28px; background: transparent; color: rgba(255,255,255,0.7); font-family: 'DM Mono', monospace; font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; border: 1px solid rgba(255,255,255,0.2); transition: all 0.25s; }
   .btn-dl-ghost:hover { border-color: var(--gold); color: var(--gold); }
   .brief-section { background: var(--cream-dark); padding: 80px 60px; border-bottom: 1px solid rgba(15,31,61,0.08); }
-  .brief-inner { max-width:
+  .brief-inner { max-width: 1300px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.2fr; gap: 80px; align-items: center; }
+  .brief-eyebrow { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+  .brief-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.8rem,2.5vw,2.6rem); font-weight: 300; color: var(--navy); line-height: 1.2; margin-bottom: 20px; }
+  .brief-title em { font-style: italic; color: var(--gold); }
+  .brief-body { font-size: 0.92rem; line-height: 1.8; color: var(--text-mid); margin-bottom: 32px; }
+  .brief-stats { display: flex; gap: 32px; margin-bottom: 32px; }
+  .brief-stat-num { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 600; color: var(--navy); line-height: 1; }
+  .brief-stat-num span { color: var(--gold); }
+  .brief-stat-label { font-size: 0.72rem; color: var(--text-light); margin-top: 4px; }
+  .brief-preview { background: var(--white); border: 1px solid rgba(15,31,61,0.08); box-shadow: 0 20px 60px rgba(15,31,61,0.1); }
+  .brief-preview-header { background: var(--navy); padding: 20px 28px; display: flex; align-items: center; justify-content: space-between; }
+  .brief-preview-label { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); }
+  .brief-preview-dots { display: flex; gap: 6px; }
+  .brief-preview-dots span { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.2); }
+  .brief-preview-dots span:first-child { background: rgba(201,168,76,0.6); }
+  .brief-preview-body { padding: 28px; }
+  .brief-preview-name { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 600; color: var(--navy); margin-bottom: 2px; }
+  .brief-preview-role { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+  .brief-preview-divider { height: 1px; background: var(--cream-dark); margin-bottom: 16px; }
+  .brief-preview-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--cream-dark); font-size: 0.75rem; }
+  .brief-preview-row:last-child { border-bottom: none; }
+  .brief-preview-key { color: var(--text-light); font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.08em; text-transform: uppercase; }
+  .brief-preview-val { color: var(--navy); font-weight: 500; text-align: right; max-width: 60%; }
+  .brief-metric-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--cream-dark); margin-top: 16px; }
+  .brief-metric-cell { background: var(--white); padding: 14px 12px; text-align: center; }
+  .brief-metric-big { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; color: var(--navy); line-height: 1; }
+  .brief-metric-big span { color: var(--gold); }
+  .brief-metric-tiny { font-size: 0.62rem; color: var(--text-light); margin-top: 3px; }
+  .brief-preview-footer { background: var(--cream-dark); padding: 12px 28px; display: flex; justify-content: space-between; align-items: center; }
+  .brief-preview-footer-text { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-light); }
+  .worksheet-section { background: var(--navy); padding: 80px 60px; }
+  .worksheet-inner { max-width: 1300px; margin: 0 auto; }
+  .worksheet-header { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 48px; gap: 40px; }
+  .worksheet-eyebrow { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+  .worksheet-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.8rem,2.5vw,2.6rem); font-weight: 300; color: var(--white); line-height: 1.2; }
+  .worksheet-title em { font-style: italic; color: var(--gold); }
+  .worksheet-sub { font-size: 0.85rem; color: rgba(255,255,255,0.45); margin-top: 8px; max-width: 480px; line-height: 1.6; }
+  .worksheet-lock-badge { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; border: 1px solid rgba(255,100,100,0.5); background: rgba(255,80,80,0.06); font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: #ff8a80; flex-shrink: 0; }
+  .ws-tabs { display: flex; gap: 2px; margin-bottom: 2px; }
+  .ws-tab { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 8px 20px; cursor: pointer; transition: all 0.2s; border: none; outline: none; }
+  .ws-tab.active { background: rgba(255,255,255,0.06); color: var(--gold); border-top: 2px solid var(--gold); }
+  .ws-tab:not(.active) { background: rgba(255,255,255,0.02); color: rgba(255,255,255,0.35); border-top: 2px solid transparent; }
+  .ws-tab:hover:not(.active) { background: rgba(255,255,255,0.04); color: rgba(255,255,255,0.6); }
+  .ws-panel { display: none; }
+  .ws-panel.active { display: block; }
+  .ws-grid { width: 100%; border-collapse: collapse; font-size: 0.75rem; }
+  .ws-grid thead tr { background: rgba(201,168,76,0.12); }
+  .ws-grid thead th { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); padding: 10px 14px; text-align: left; border-bottom: 1px solid rgba(201,168,76,0.2); white-space: nowrap; font-weight: 400; }
+  .ws-grid tbody tr { border-bottom: 1px solid rgba(255,255,255,0.04); transition: background 0.15s; }
+  .ws-grid tbody tr:hover { background: rgba(255,255,255,0.03); }
+  .ws-grid tbody td { padding: 10px 14px; color: rgba(255,255,255,0.65); vertical-align: middle; }
+  .ws-tag { display: inline-block; padding: 3px 10px; font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.08em; text-transform: uppercase; border-radius: 2px; }
+  .ws-tag-t1 { background: rgba(201,168,76,0.15); color: var(--gold); }
+  .ws-tag-t2 { background: rgba(42,74,138,0.5); color: rgba(255,255,255,0.7); }
+  .ws-tag-t3 { background: rgba(255,255,255,0.05); color: rgba(255,255,255,0.4); }
+  .ws-tag-applied { background: rgba(76,175,130,0.2); color: #6ecfa0; }
+  .resources-section { padding: 100px 60px; background: var(--cream-dark); }
+  .resources-inner { max-width: 1100px; margin: 0 auto; }
+  .resources-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-top: 40px; }
+  .resource-card { background: var(--white); border: 1px solid rgba(15,31,61,0.08); padding: 32px 28px; display: flex; flex-direction: column; transition: all 0.25s; text-decoration: none; color: inherit; }
+  .resource-card:hover { border-color: var(--gold); transform: translateY(-3px); box-shadow: 0 8px 32px rgba(15,31,61,0.1); }
+  .resource-icon { font-size: 1.8rem; margin-bottom: 16px; }
+  .resource-type { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+  .resource-title { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 600; color: var(--navy); margin-bottom: 10px; line-height: 1.3; }
+  .resource-desc { font-size: 0.83rem; color: var(--text-mid); line-height: 1.65; flex-grow: 1; margin-bottom: 20px; }
+  .resource-cta { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--navy); display: flex; align-items: center; gap: 8px; transition: color 0.2s; }
+  .resource-card:hover .resource-cta { color: var(--gold); }
+  .resource-cta-arrow { transition: transform 0.2s; }
+  .resource-card:hover .resource-cta-arrow { transform: translateX(4px); }
+  #contact { padding: 120px 60px; max-width: 1300px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+  .contact-left .section-title { margin-bottom: 20px; }
+  .contact-body { font-size: 1rem; line-height: 1.8; color: var(--text-mid); margin-bottom: 40px; }
+  .contact-links { display: flex; flex-direction: column; gap: 16px; }
+  .contact-link { display: flex; align-items: center; gap: 16px; text-decoration: none; color: var(--text-mid); font-size: 0.9rem; transition: all 0.2s; padding: 16px 20px; background: white; border-left: 3px solid transparent; }
+  .contact-link:hover { border-left-color: var(--gold); color: var(--navy); transform: translateX(4px); }
+  .contact-link-icon { font-size: 1rem; width: 24px; text-align: center; }
+  .contact-right { background: var(--navy); padding: 56px 48px; }
+  .contact-availability { font-family: 'DM Mono', monospace; font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 24px; display: flex; align-items: center; gap: 10px; }
+  .availability-dot { width: 8px; height: 8px; background: #4caf82; border-radius: 50%; animation: pulse 2s infinite; }
+  .contact-pitch { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 300; color: var(--white); line-height: 1.5; margin-bottom: 32px; }
+  .contact-pitch em { font-style: italic; color: var(--gold-light); }
+  .contact-details { display: flex; flex-direction: column; gap: 14px; }
+  .contact-detail-item { display: flex; align-items: center; gap: 14px; font-size: 0.85rem; color: rgba(255,255,255,0.6); }
+  .contact-detail-item span:first-child { color: var(--gold); font-family: 'DM Mono', monospace; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; min-width: 80px; }
+  footer { background: #080f1e; padding: 32px 60px; display: flex; justify-content: space-between; align-items: center; }
+  .footer-name { font-family: 'Cormorant Garamond', serif; font-size: 1rem; color: rgba(255,255,255,0.4); }
+  .footer-copy { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.1em; color: rgba(255,255,255,0.2); }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes slideIn { from { opacity: 0; transform: translateX(30px); } to { opacity: 1; transform: translateX(0); } }
+  @keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.6; transform: scale(1.3); } }
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+  @media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-left { padding: 120px 30px 60px; }
+    .hero-right { padding: 60px 30px; }
+    #about, #contact { grid-template-columns: 1fr; gap: 40px; padding: 60px 24px; }
+    #experience, #competencies { padding: 60px 24px; }
+    .impact-grid { grid-template-columns: repeat(2,1fr); }
+    .competency-grid { grid-template-columns: repeat(2,1fr); }
+    .edu-grid { grid-template-columns: 1fr; }
+    .timeline-item { grid-template-columns: 1fr; gap: 16px; }
+    #impact, #education { padding: 80px 24px; }
+    .resume-strip { padding: 60px 24px; }
+    .resume-strip-inner { flex-direction: column; align-items: flex-start; gap: 24px; }
+    .brief-inner { grid-template-columns: 1fr; gap: 40px; }
+    .brief-section, .worksheet-section, .resources-section { padding: 60px 24px; }
+    .worksheet-header { flex-direction: column; align-items: flex-start; }
+    .resources-grid { grid-template-columns: 1fr; }
+    footer { padding: 24px; flex-direction: column; gap: 8px; text-align: center; }
+    nav { padding: 16px 24px; }
+    .nav-links { gap: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Cernice Robinson</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#impact">Impact</a></li>
+    <li><a href="#competencies">Skills</a></li>
+    <li><a href="#resources">Resources</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow">Director of Customer Success</div>
+    <h1 class="hero-name">Cernice<br><em>Robinson</em></h1>
+    <div class="hero-title">Customer Success Leadership &nbsp;·&nbsp; BPO Operations &nbsp;·&nbsp; Enterprise Accounts</div>
+    <p class="hero-statement">I build customer success programs that<br>make the invisible visible — detecting quiet<br>disengagement before churn intent forms.</p>
+    <div class="hero-cta-row">
+      <a href="#contact" class="btn-primary">Get In Touch</a>
+      <a href="#experience" class="btn-secondary">View Experience</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="metric-card">
+      <div class="metric-number">18<span>%</span></div>
+      <div class="metric-desc"><div class="metric-label">Client Churn Reduced</div><div class="metric-sub">Via health scoring, risk modeling &amp; proactive intervention playbooks</div></div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-number">32<span>pt</span></div>
+      <div class="metric-desc"><div class="metric-label">NPS Improvement</div><div class="metric-sub">Through structured engagement, QBRs &amp; executive stakeholder alignment</div></div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-number">27<span>%</span></div>
+      <div class="metric-desc"><div class="metric-label">Retention Rate Gained</div><div class="metric-sub">Across remote BPO &amp; distributed workforce client portfolios</div></div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-number">$4.2<span>M</span></div>
+      <div class="metric-desc"><div class="metric-label">Enterprise ARR Protected</div><div class="metric-sub">In at-risk accounts recovered through early intervention strategy</div></div>
+    </div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="about-left reveal">
+    <div class="section-label">About</div>
+    <h2 class="section-title">A career built on<br><em>keeping clients</em></h2>
+    <p class="about-body">I'm a Customer Success executive with <strong>10+ years</strong> building and scaling enterprise CS programs across global BPO platforms, remote staffing solutions, and Fortune 500 enterprise account management — with a track record of making the invisible visible before churn intent forms.</p>
+    <p class="about-body">My approach treats customer risk as <strong>two distinct profiles</strong>: vocal dissatisfaction requiring rapid containment, and quiet disengagement requiring behavioral signal detection. Building the dual-lane health scoring systems that address both is where I do my best work — and where my results live: 18% churn reduction, $4.2M ARR protected, 32-point NPS improvement.</p>
+    <p class="about-body">I've built CS programs from scratch, led teams of 4 to 20, managed 200+ enterprise accounts, and operated remote-first since 2020. My MS in Business Analytics from Syracuse University underpins every health score, dashboard, and retention framework I've built.</p>
+  </div>
+  <div class="about-right reveal">
+    <div class="section-label">Core Expertise</div>
+    <ul class="expertise-list">
+      <li class="expertise-item">Dual-Lane Health Scoring &amp; Predictive Risk Detection</li>
+      <li class="expertise-item">CS Program Architecture &amp; 30-60-90 Execution Frameworks</li>
+      <li class="expertise-item">Client Retention, Churn Reduction &amp; NRR Growth</li>
+      <li class="expertise-item">Global BPO &amp; Remote Workforce Operations</li>
+      <li class="expertise-item">CSM Team Hiring, Coaching &amp; Performance Development</li>
+      <li class="expertise-item">Sales-CS Alignment &amp; Cross-Functional Handoff Design</li>
+      <li class="expertise-item">QBR Facilitation &amp; C-Suite Stakeholder Engagement</li>
+      <li class="expertise-item">GRR / NRR / CSAT / NPS Analytics &amp; Executive Dashboards</li>
+      <li class="expertise-item">Enterprise Onboarding &amp; Time-to-Value Acceleration</li>
+      <li class="expertise-item">Gainsight · Salesforce CRM · Tableau · SQL · Excel</li>
+    </ul>
+  </div>
+</section>
+
+<div class="resume-strip reveal">
+  <div class="resume-strip-inner">
+    <div>
+      <div class="resume-strip-eyebrow">Full Credentials</div>
+      <div class="resume-strip-title">Director of Customer Success — Resume</div>
+      <div class="resume-strip-sub">10+ years · 200+ enterprise accounts · Walmart, Kroger, Safeway · MS Business Analytics, Syracuse</div>
+    </div>
+    <div class="resume-strip-actions">
+      <a href="Cernice_Robinson_Resume_v5.pdf" download class="btn-dl-primary">↓ &nbsp;Download Resume (PDF)</a>
+      <a href="https://linkedin.com/in/cernice-robinson" target="_blank" class="btn-dl-ghost">View LinkedIn →</a>
+    </div>
+  </div>
+</div>
+
+<section id="experience">
+  <div class="section-label reveal">Experience</div>
+  <h2 class="section-title reveal">10+ years of <em>proven results</em></h2>
+  <div class="timeline">
+    <div class="timeline-item reveal">
+      <div class="timeline-left">
+        <div class="timeline-date">Feb 2024 — Present</div>
+        <div class="timeline-company">Global Market Foods<br>(Ziyad Brothers Importing)</div>
+        <div class="timeline-industry">Enterprise CPG &amp; Retail Distribution</div>
+      </div>
+      <div class="timeline-right">
+        <div class="timeline-role">Director of Customer Success &amp; Strategic Partnerships</div>
+        <div class="timeline-summary">Built the organization's first formal CS program from the ground up — architecting a dual-lane health scoring system that distinguishes vocal dissatisfaction from quiet disengagement, and deploying distinct response motions for each risk profile across a 200+ account Fortune 500 portfolio.</div>
+        <ul class="timeline-bullets">
+          <li>Built <strong>dual-lane health scoring architecture</strong> flagging composite risk when two or more behavioral signals moved together — improving early-risk detection <strong>27%</strong> and protecting <strong>$4.2M</strong> in at-risk ARR within 12 months</li>
+          <li>Resolved chronic <strong>Sales-CS misalignment</strong> by diagnosing three structural gaps and deploying a shared dashboard, mandatory handoff template, and cross-functional launch reviews — reducing escalation volume <strong>41%</strong></li>
+          <li>Built and lead a team of <strong>4 CS associates and 2 ops coordinators</strong> — improving team SLA compliance from <strong>74% to 96%</strong> through weekly coaching, KPI scorecards, and monthly calibration sessions</li>
+          <li>Designed a <strong>30-60-90 onboarding framework</strong> with milestone-based checkpoints — reducing average onboarding completion time <strong>30%</strong> and improving early-stage CSAT</li>
+          <li>Facilitated executive QBRs with VP and C-suite stakeholders at Walmart, Kroger, Jewel-Osco, Meijer, Safeway &amp; Albertsons — achieving <strong>100% renewal rate</strong> on top-tier accounts</li>
+        </ul>
+        <div><span class="achievement-tag">★ 200+ Enterprise Accounts</span></div>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-left">
+        <div class="timeline-date">Oct 2022 — Feb 2024</div>
+        <div class="timeline-company">Ziyad Brothers Importing</div>
+        <div class="timeline-industry">Global Food Distribution &amp; Supply Chain</div>
+      </div>
+      <div class="timeline-right">
+        <div class="timeline-role">Senior Business Analyst &amp; Client Operations Manager</div>
+        <div class="timeline-summary">Served as the internal architect of the customer success infrastructure — building data systems, KPI frameworks, and client health indicators that became the foundation of the enterprise CS program.</div>
+        <ul class="timeline-bullets">
+          <li>Improved forecasting accuracy by <strong>34%</strong> and enabled <strong>21% year-over-year revenue growth</strong> through redesigned client service workflows</li>
+          <li>Reduced revenue leakage by <strong>9%</strong> via ROI tracking dashboards and real-time performance analytics surfacing account risk patterns</li>
+          <li>Defined the organization's first formal CS metrics — health scores, churn risk indicators, and engagement benchmarks</li>
+          <li>Drove Lean Six Sigma-informed process improvements, reducing average issue resolution time by <strong>22%</strong></li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-left">
+        <div class="timeline-date">May 2020 — Aug 2023</div>
+        <div class="timeline-company">ACD Direct &amp; A Call Away Staffing</div>
+        <div class="timeline-industry">Remote BPO &amp; Workforce Solutions</div>
+      </div>
+      <div class="timeline-right">
+        <div class="timeline-role">Customer Success Manager — Remote BPO &amp; Staffing Operations</div>
+        <div class="timeline-summary">Built and led CS operations for two concurrent remote BPO engagements — applying a composite behavioral signal model to detect at-risk accounts 60+ days before renewal windows.</div>
+        <ul class="timeline-bullets">
+          <li>Applied <strong>composite behavioral signal detection</strong> — flagging churn risk <strong>60+ days before renewal</strong>, resolving 89% of issues before escalation and increasing retention <strong>27%</strong></li>
+          <li>Managed full lifecycle for <strong>40+ active accounts</strong> — achieving <strong>95%+ CSAT</strong> ratings across the portfolio</li>
+          <li>Hired, trained, and managed a remote CS team of <strong>8 specialists</strong> — reducing new hire ramp time <strong>35%</strong></li>
+          <li>Built a <strong>structured Sales-to-CS handoff protocol</strong> — reducing transition-related churn <strong>19%</strong></li>
+        </ul>
+        <div><span class="achievement-tag">★ Remote-First Operations Since 2020</span></div>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-left">
+        <div class="timeline-date">Apr 2016 — May 2019</div>
+        <div class="timeline-company">Groupon</div>
+        <div class="timeline-industry">Digital Commerce &amp; Merchant Partnerships</div>
+      </div>
+      <div class="timeline-right">
+        <div class="timeline-role">Sales Team Lead &amp; Senior Strategic Account Executive</div>
+        <div class="timeline-summary">Led and mentored 18–20 inside sales reps while personally carrying revenue targets.</div>
+        <ul class="timeline-bullets">
+          <li>Generated <strong>$1.2M</strong> in personal new revenue through strategic account expansion and cross-selling</li>
+          <li>Consistently achieved <strong>120%+ of individual revenue targets</strong> — driving collective team attainment of 110%+</li>
+          <li>Managed portfolio of <strong>80+ active merchant accounts</strong> with monthly performance reviews</li>
+        </ul>
+        <div><span class="achievement-tag">★ 18–20 Direct Reports</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="brief-section" id="resources">
+  <div class="brief-inner">
+    <div class="brief-left reveal">
+      <div class="brief-eyebrow">CS Leadership Brief</div>
+      <h2 class="brief-title">One page.<br><em>The full picture.</em></h2>
+      <p class="brief-body">A distilled executive brief covering CS leadership philosophy, program architecture approach, and the metrics framework behind every retention outcome — for hiring managers who want the signal without the noise.</p>
+      <div class="brief-stats">
+        <div class="brief-stat"><div class="brief-stat-num">18<span>%</span></div><div class="brief-stat-label">Churn Reduction</div></div>
+        <div class="brief-stat"><div class="brief-stat-num">$4.2<span>M</span></div><div class="brief-stat-label">ARR Protected</div></div>
+        <div class="brief-stat"><div class="brief-stat-num">10<span>+</span></div><div class="brief-stat-label">Years CS Leadership</div></div>
+      </div>
+      <a href="Cernice_Robinson_CS_Brief.pdf" download class="btn-dl-primary">↓ &nbsp;Download CS Brief (PDF)</a>
+    </div>
+    <div class="brief-right reveal">
+      <div class="brief-preview">
+        <div class="brief-preview-header">
+          <div class="brief-preview-label">CS Leadership Brief — Cernice Robinson</div>
+          <div class="brief-preview-dots"><span></span><span></span><span></span></div>
+        </div>
+        <div class="brief-preview-body">
+          <div class="brief-preview-name">Cernice Robinson</div>
+          <div class="brief-preview-role">Director of Customer Success &amp; Client Experience</div>
+          <div class="brief-preview-divider"></div>
+          <div class="brief-preview-row"><span class="brief-preview-key">CS Philosophy</span><span class="brief-preview-val">Dual-lane risk detection — vocal + silent</span></div>
+          <div class="brief-preview-row"><span class="brief-preview-key">Program Approach</span><span class="brief-preview-val">30-60-90 framework, health scoring at day 1</span></div>
+          <div class="brief-preview-row"><span class="brief-preview-key">Team Leadership</span><span class="brief-preview-val">4 to 20 members, 35% faster ramp</span></div>
+          <div class="brief-preview-row"><span class="brief-preview-key">Cross-Functional</span><span class="brief-preview-val">Sales-CS alignment, 41% escalation drop</span></div>
+          <div class="brief-preview-row"><span class="brief-preview-key">Analytics</span><span class="brief-preview-val">MS Business Analytics, Syracuse University</span></div>
+          <div class="brief-metric-row">
+            <div class="brief-metric-cell"><div class="brief-metric-big">96<span>%</span></div><div class="brief-metric-tiny">SLA Compliance</div></div>
+            <div class="brief-metric-cell"><div class="brief-metric-big">32<span>pt</span></div><div class="brief-metric-tiny">NPS Lift</div></div>
+            <div class="brief-metric-cell"><div class="brief-metric-big">200<span>+</span></div><div class="brief-metric-tiny">Enterprise Accts</div></div>
+          </div>
+        </div>
+        <div class="brief-preview-footer">
+          <div class="brief-preview-footer-text">crobins26.github.io · Full PDF available above</div>
+          <div>📄</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="impact">
+  <div class="impact-inner">
+    <div class="section-label reveal">By the Numbers</div>
+    <h2 class="section-title reveal">Impact that <em>speaks</em></h2>
+    <div class="impact-grid">
+      <div class="impact-cell reveal"><div class="impact-big">18%</div><div class="impact-label">Churn Reduction</div><div class="impact-context">Achieved through predictive health scoring and proactive intervention playbooks across a 200+ account enterprise portfolio</div></div>
+      <div class="impact-cell reveal"><div class="impact-big">$4.2M</div><div class="impact-label">ARR Protected</div><div class="impact-context">At-risk enterprise revenue recovered within 12 months of CS program launch through early identification and executive engagement</div></div>
+      <div class="impact-cell reveal"><div class="impact-big">200+</div><div class="impact-label">Enterprise Accounts</div><div class="impact-context">Fortune 500 retail partnerships including Walmart, Kroger, Safeway, Albertsons, Meijer, and Jewel-Osco</div></div>
+      <div class="impact-cell reveal"><div class="impact-big">96%</div><div class="impact-label">SLA Compliance</div><div class="impact-context">Team SLA performance improved from 74% through structured coaching, KPI scorecards, and weekly calibration</div></div>
+    </div>
+  </div>
+</div>
+
+<section id="competencies">
+  <div class="section-label reveal">Competencies</div>
+  <h2 class="section-title reveal">Built to lead <em>every layer</em></h2>
+  <div class="competency-grid">
+    <div class="competency-card reveal"><div class="comp-icon">🎯</div><div class="comp-title">CS Program Architecture</div><div class="comp-desc">Designs end-to-end customer success programs from scratch — health scoring models, tiered segmentation, onboarding frameworks, and intervention playbooks aligned to business goals.</div></div>
+    <div class="competency-card reveal"><div class="comp-icon">📊</div><div class="comp-title">Retention Analytics</div><div class="comp-desc">Builds executive-facing dashboards in Tableau and Excel tracking NPS, CSAT, churn risk signals, engagement velocity, and renewal health. MS in Business Analytics, Syracuse University.</div></div>
+    <div class="competency-card reveal"><div class="comp-icon">🌐</div><div class="comp-title">Global BPO Operations</div><div class="comp-desc">Led distributed remote workforce operations across call center outsourcing and administrative staffing — with experience managing performance, QA, and client delivery in fully remote environments since 2020.</div></div>
+    <div class="competency-card reveal"><div class="comp-icon">👥</div><div class="comp-title">Team Leadership &amp; Development</div><div class="comp-desc">Built and scaled CS teams from 4 to 20 members — establishing hiring processes, onboarding curricula, 1:1 coaching cadences, and KPI frameworks that reduce ramp time and improve retention metrics.</div></div>
+    <div class="competency-card reveal"><div class="comp-icon">🤝</div><div class="comp-title">Executive Stakeholder Management</div><div class="comp-desc">Facilitates C-suite and VP-level QBRs with Fortune 500 retail accounts, presenting ROI analyses, performance benchmarks, and forward-looking partnership roadmaps that drive 100% renewal rates on tier-1 accounts.</div></div>
+    <div class="competency-card reveal"><div class="comp-icon">⚙️</div><div class="comp-title">Cross-Functional Alignment</div><div class="comp-desc">Bridges Sales, Operations, Recruitment, and Implementation around a unified customer lifecycle — reducing escalation volume by 41% through upstream communication protocols and accountability frameworks.</div></div>
+  </div>
+</section>
+
+<div class="worksheet-section">
+  <div class="worksheet-inner">
+    <div class="worksheet-header reveal">
+      <div>
+        <div class="worksheet-eyebrow">Director-Level CS Toolkit</div>
+        <h2 class="worksheet-title">CS Leadership <em>Operational System</em></h2>
+        <div class="worksheet-sub">A 5-tab working system built by a CS Director — health scoring models, QBR frameworks, team performance scorecards, churn early warning, and onboarding trackers. The tools behind the outcomes.</div>
+      </div>
+      <div class="worksheet-lock-badge">🔒 &nbsp;View Only · Not Available for Download</div>
+    </div>
+    <div class="ws-tabs reveal">
+      <button class="ws-tab active" onclick="wsSwitch(this,'ws-health')">🏥 Health Scoring</button>
+      <button class="ws-tab" onclick="wsSwitch(this,'ws-qbr')">📋 QBR Planning</button>
+      <button class="ws-tab" onclick="wsSwitch(this,'ws-team')">👥 Team Performance</button>
+      <button class="ws-tab" onclick="wsSwitch(this,'ws-churn')">⚠ Churn Risk EWS</button>
+      <button class="ws-tab" onclick="wsSwitch(this,'ws-onboard')">🚀 Onboarding Tracker</button>
+    </div>
+    <div id="ws-health" class="ws-panel active">
+      <table class="ws-grid">
+        <thead><tr><th>Account Name</th><th>Tier</th><th>CSM Owner</th><th>ARR ($K)</th><th>Adoption %</th><th>CSAT</th><th>Engagement</th><th>Financial</th><th>Exec Rel.</th><th>COMPOSITE</th><th>Risk Rating</th><th>Trend</th><th>Last QBR</th><th>Next Action</th></tr></thead>
+        <tbody>
+          <tr><td style="color:rgba(255,255,255,0.9);font-weight:600">Walmart</td><td><span class="ws-tag ws-tag-t1">Enterprise</span></td><td>Cernice R.</td><td style="color:var(--gold)">2,400</td><td style="color:#6ecfa0">92%</td><td style="color:#6ecfa0">4.8</td><td style="color:#6ecfa0">88%</td><td style="color:#6ecfa0">100%</td><td style="color:#6ecfa0">95%</td><td style="color:#6ecfa0;font-weight:700;font-family:'DM Mono',monospace">94%</td><td><span class="ws-tag" style="background:rgba(78,160,100,0.2);color:#6ecfa0">🟢 Healthy</span></td><td style="color:#6ecfa0">↑ Improving</td><td>Jan 15 2025</td><td>Expansion proposal</td></tr>
+          <tr style="background:rgba(255,255,255,0.02)"><td style="color:rgba(255,255,255,0.9);font-weight:600">Kroger</td><td><span class="ws-tag ws-tag-t1">Enterprise</span></td><td>Cernice R.</td><td style="color:var(--gold)">1,800</td><td style="color:#6ecfa0">87%</td><td style="color:#6ecfa0">4.6</td><td style="color:#6ecfa0">82%</td><td style="color:#6ecfa0">98%</td><td style="color:#6ecfa0">90%</td><td style="color:#6ecfa0;font-weight:700;font-family:'DM Mono',monospace">89%</td><td><span class="ws-tag" style="background:rgba(78,160,100,0.2);color:#6ecfa0">🟢 Healthy</span></td><td>→ Stable</td><td>Jan 22 2025</td><td>QBR scheduled Feb</td></tr>
+          <tr><td style="color:rgba(255,255,255,0.9);font-weight:600">Meijer</td><td><span class="ws-tag ws-tag-t1">Enterprise</span></td><td>T. Williams</td><td style="color:var(--gold)">1,200</td><td style="color:#ffd54f">71%</td><td style="color:#ffd54f">4.1</td><td style="color:#ffd54f">68%</td><td style="color:#6ecfa0">92%</td><td style="color:#ffd54f">80%</td><td style="color:#ffd54f;font-weight:700;font-family:'DM Mono',monospace">76%</td><td><span class="ws-tag" style="background:rgba(255,193,7,0.15);color:#ffd54f">🟡 Monitor</span></td><td style="color:#ff8a65">↓ Declining</td><td>Jan 08 2025</td><td>⚠ Intervention plan</td></tr>
+          <tr style="background:rgba(255,255,255,0.02)"><td style="color:rgba(255,255,255,0.9);font-weight:600">Safeway</td><td><span class="ws-tag ws-tag-t1">Enterprise</span></td><td>T. Williams</td><td style="color:var(--gold)">880</td><td style="color:#ff8a65">65%</td><td style="color:#ff8a65">3.9</td><td style="color:#ff8a65">60%</td><td style="color:#ffd54f">88%</td><td style="color:#ff8a65">72%</td><td style="color:#ff6b6b;font-weight:700;font-family:'DM Mono',monospace">67%</td><td><span class="ws-tag" style="background:rgba(255,100,100,0.2);color:#ff8a65">🟠 At Risk</span></td><td style="color:#ff6b6b">↓ Declining</td><td>Dec 12 2024</td><td>🔴 Executive call req.</td></tr>
+          <tr><td style="color:rgba(255,255,255,0.9);font-weight:600">Trader Joes</td><td><span class="ws-tag ws-tag-t2">Growth</span></td><td>M. Chen</td><td style="color:var(--gold)">120</td><td style="color:#ff6b6b">45%</td><td style="color:#ff6b6b">3.2</td><td style="color:#ff6b6b">42%</td><td style="color:#ff8a65">75%</td><td style="color:#ff6b6b">50%</td><td style="color:#ff6b6b;font-weight:700;font-family:'DM Mono',monospace">48%</td><td><span class="ws-tag" style="background:rgba(220,50,50,0.25);color:#ff6b6b">🔴 Critical</span></td><td style="color:#ff6b6b">↓ Declining</td><td>Nov 30 2024</td><td>🔴 Churn risk — act now</td></tr>
+        </tbody>
+      </table>
+      <div style="margin-top:10px;font-family:'DM Mono',monospace;font-size:0.62rem;color:rgba(255,255,255,0.3)">COMPOSITE SCORE = Adoption×30% + (CSAT/5)×25% + Engagement×20% + Financial×15% + Exec Rel×10%</div>
+    </div>
+    <div id="ws-qbr" class="ws-panel">
+      <table class="ws-grid">
+        <thead><tr><th>#</th><th>Agenda Item</th><th>Owner</th><th>Duration</th><th>Key Talking Points</th><th>Success Metric</th><th>Exec Loop?</th><th>Time Block</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Executive Welcome &amp; Agenda Review</td><td>Client Exec</td><td>5 min</td><td>Set tone, confirm agenda, intro attendees</td><td>Executives engaged in room</td><td style="color:#6ecfa0">No</td><td style="font-family:'DM Mono',monospace">0:00–0:05</td></tr>
+          <tr style="background:rgba(255,255,255,0.02)"><td>2</td><td style="font-weight:500;color:rgba(255,255,255,0.9)">Partnership Health Snapshot</td><td>CSM / Director</td><td>10 min</td><td>Score, trend, NPS, key wins vs. last QBR</td><td>Client validates scores</td><td style="color:#6ecfa0">No</td><td style="font-family:'DM Mono',monospace">0:05–0:15</td></tr>
+          <tr><td>3</td><td style="font-weight:500;color:rgba(255,255,255,0.9)">ROI &amp; Value Delivered</td><td>CSM</td><td>15 min</td><td>Quantified outcomes, cost savings, efficiency gains</td><td>Client confirms 2+ specific outcomes</td><td style="color:#6ecfa0">No</td><td style="font-family:'DM Mono',monospace">0:15–0:30</td></tr>
+          <tr style="background:rgba(255,255,255,0.02)"><td>4</td><td>Product Adoption Deep Dive</td><td>CSM</td><td>15 min</td><td>Feature usage heatmap, underutilized capabilities</td><td>Identify 1 adoption growth area</td><td style="color:#6ecfa0">No</td><td style="font-family:'DM Mono',monospace">0:30–0:45</td></tr>
+          <tr><td>5</td><td>Challenges &amp; Open Issues</td><td>Both</td><td>10 min</td><td>Address open tickets, escalations, concerns</td><td>All open items have owner + date</td><td style="color:#ffd54f">If P1</td><td style="font-family:'DM Mono',monospace">0:45–0:55</td></tr>
+          <tr style="background:rgba(255,255,255,0.02)"><td>6</td><td style="font-weight:500;color:rgba(255,255,255,0.9)">Joint Success Plan — Next 90 Days</td><td>Both</td><td>10 min</td><td>3–5 mutual commitments, owners, due dates</td><td>Written plan agreed by both parties</td><td style="color:#ffd54f">Yes</td><td style="font-family:'DM Mono',monospace">1:10–1:20</td></tr>
+          <tr><td>7</td><td>Executive Ask / Expansion</td><td>Director</td><td>5 min</td><td>NPS survey, case study, referral, or upsell signal</td><td style="color:#ffd54f;font-style:italic">Only if health &gt; 75%</td><td style="color:#ffd54f">Yes</td><td style="font-family:'DM Mono',monospace">1:20–1:25</td></tr>
+          <tr style="background:rgba(255,255,255,0.02)"><td>8</td><td>Wrap-Up &amp; Next QBR Date</td><td>CSM</td><td>5 min</td><td>Confirm action items; book next QBR on the spot</td><td>Follow-up sent within 24 hrs</td><td style="color:#6ecfa0">No</td><td style="font-family:'DM Mono',monospace">1:25–1:30</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="ws-team" class="ws-panel">
+      <table class="ws-grid">
+        <thead><tr><th>CSM Name</th><th>Seniority</th><th>Accounts</th><th>ARR ($K)</th><th>NRR</th><th>GRR</th><th>CSAT</th><th>QBR Rate</th><th>TTV (days)</th><th>Health Cov.</th><th>COMPOSITE</th><th>Rating</th><th>Trend</th><th>Coaching Focus</th></tr></thead>
+        <tbody>
+          <tr><td style="color:var(--gold);font-weight:700">Cernice Robinson</td><td style="color:var(--gold)">Director</td><td>10</td><td style="color:var(--gold)">8,030</td><td style="color:#6ecfa0">109%</td><td style="color:#6ecfa0">98%</td><td style="color:#6ecfa0">4.8</td><td style="color:#6ecfa0">100%</td><td style="color:#6ecfa0">38d</td><td style="color:#6ecfa0">97%</td><td style="color:#6ecfa0;font-weight:700;font-family:'DM Mono',monospace">107%</td><td><span class="ws-tag" style="background:rgba(201,168,76,0.2);color:var(--gold)">⭐ Exceeds</span></td><td style="color:#6ecfa0">↑</td><td>Player-coach / Strategic accounts</td></tr>
+          <tr style="background:rgba(255,255,255,0.02)"><td style="color:rgba(255,255,255,0.85);font-weight:500">T. Williams</td><td>Senior CSM</td><td>8</td><td>3,400</td><td style="color:#6ecfa0">103%</td><td style="color:#ffd54f">94%</td><td style="color:#ffd54f">4.4</td><td style="color:#ffd54f">88%</td><td>44d</td><td style="color:#6ecfa0">91%</td><td style="color:#6ecfa0;font-weight:700;font-family:'DM Mono',monospace">98%</td><td><span class="ws-tag ws-tag-applied">✅ Meets</span></td><td>→</td><td>QBR quality &amp; exec relationships</td></tr>
+          <tr><td style="color:rgba(255,255,255,0.85);font-weight:500">J. Patel</td><td>CSM II</td><td>7</td><td>1,015</td><td style="color:#6ecfa0">106%</td><td style="color:#6ecfa0">96%</td><td style="color:#6ecfa0">4.7</td><td style="color:#6ecfa0">95%</td><td style="color:#6ecfa0">42d</td><td style="color:#6ecfa0">93%</td><td style="color:#6ecfa0;font-weight:700;font-family:'DM Mono',monospace">102%</td><td><span class="ws-tag ws-tag-applied">✅ Meets</span></td><td style="color:#6ecfa0">↑</td><td>Expansion identification</td></tr>
+          <tr style="background:rgba(255,255,255,0.02)"><td style="color:rgba(255,255,255,0.85);font-weight:500">M. Chen</td><td>CSM I</td><td>5</td><td>260</td><td style="color:#ffd54f">98%</td><td style="color:#ff8a65">91%</td><td style="color:#ffd54f">4.2</td><td style="color:#ff8a65">80%</td><td style="color:#ff8a65">52d</td><td style="color:#ffd54f">85%</td><td style="color:#ffd54f;font-weight:700;font-family:'DM Mono',monospace">89%</td><td><span class="ws-tag" style="background:rgba(255,193,7,0.15);color:#ffd54f">⚠ Below</span></td><td style="color:#ff8a65">↓</td><td>TTV reduction &amp; health coverage</td></tr>
+          <tr><td style="color:#ff8a65;font-weight:500">A. Rodriguez</td><td>Associate CSM</td><td>4</td><td>130</td><td style="color:#ff6b6b">95%</td><td style="color:#ff6b6b">89%</td><td style="color:#ff6b6b">4.0</td><td style="color:#ff6b6b">75%</td><td style="color:#ff6b6b">58d</td><td style="color:#ff6b6b">82%</td><td style="color:#ff6b6b;font-weight:700;font-family:'DM Mono',monospace">82%</td><td><span class="ws-tag" style="background:rgba(220,50,50,0.2);color:#ff6b6b">🔴 PIP</span></td><td style="color:#ff6b6b">↓</td><td style="color:#ff8a65">Core CSM skills — PIP candidate</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="ws-churn" class="ws-panel">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px">
+        <div style="background:rgba(156,31,31,0.2);border:1px solid rgba(156,31,31,0.4);padding:12px 16px"><div style="font-family:'DM Mono',monospace;font-size:0.6rem;color:#ff8a65;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:6px">LANE 1 — Vocal Dissatisfaction · Response: 24–48hrs</div><div style="font-size:0.78rem;color:rgba(255,255,255,0.65);line-height:1.6">NPS Detractor (35%) · Negative CSAT &lt;3.5 (25%) · Escalation P1/P2 (20%) · Executive complaint (15%) · Cancellation signal (5%)</div></div>
+        <div style="background:rgba(15,31,61,0.6);border:1px solid rgba(42,74,138,0.5);padding:12px 16px"><div style="font-family:'DM Mono',monospace;font-size:0.6rem;color:var(--gold);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:6px">LANE 2 — Silent Disengagement · Composite &gt;= 2 signals</div><div style="font-size:0.78rem;color:rgba(255,255,255,0.65);line-height:1.6">Usage decline &gt;=20% (30%) · Reduced touchpoints (25%) · Slower response time (20%) · Feature plateau (15%) · Champion access lost (10%)</div></div>
+      </div>
+      <table class="ws-grid">
+        <thead><tr><th>Account</th><th>ARR ($K)</th><th>Renewal Date</th><th>Risk Lane</th><th>Risk Score</th><th>Vocal Signals</th><th>Silent Signals</th><th>Days to Renewal</th><th>Owner</th><th>Save %</th><th>ARR at Risk</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td style="color:#ff6b6b;font-weight:700">Safeway</td><td style="color:#ff6b6b">880</td><td>Sep 30 2025</td><td><span class="ws-tag" style="background:rgba(220,50,50,0.2);color:#ff8a65">Lane 1 — Vocal</span></td><td style="color:#ff6b6b;font-family:'DM Mono',monospace;font-weight:700">78%</td><td>NPS=4, Escalation open</td><td>Usage -31%, touchpoints low</td><td style="color:#ff6b6b;font-weight:700">237</td><td style="color:var(--gold)">Cernice Robinson</td><td style="color:#ffd54f">60%</td><td style="color:#ff6b6b;font-family:'DM Mono',monospace">=ARR x (1-Save%)</td><td><span class="ws-tag" style="background:rgba(220,50,50,0.25);color:#ff6b6b">🔴 Critical</span></td></tr>
+          <tr style="background:rgba(255,255,255,0.02)"><td style="color:#ff6b6b;font-weight:700">Meijer</td><td style="color:#ff6b6b">1,200</td><td>Jun 15 2025</td><td><span class="ws-tag" style="background:rgba(220,50,50,0.2);color:#ff8a65">Lane 1+2 — Both</span></td><td style="color:#ff6b6b;font-family:'DM Mono',monospace;font-weight:700">65%</td><td>Exec complaint filed</td><td>Champion departed</td><td style="color:#ff6b6b;font-weight:700">132</td><td style="color:var(--gold)">Cernice Robinson</td><td style="color:#ff8a65">45%</td><td style="color:#ff6b6b;font-family:'DM Mono',monospace">=ARR x (1-Save%)</td><td><span class="ws-tag" style="background:rgba(220,50,50,0.25);color:#ff6b6b">🔴 Escalated</span></td></tr>
+          <tr><td style="color:#ff8a65;font-weight:700">Trader Joes</td><td style="color:#ff8a65">120</td><td>Apr 01 2025</td><td><span class="ws-tag ws-tag-t2">Lane 2 — Silent</span></td><td style="color:#ff8a65;font-family:'DM Mono',monospace;font-weight:700">42%</td><td style="color:rgba(255,255,255,0.4)">None</td><td>Usage -45%, 0 email response</td><td style="color:#ff6b6b;font-weight:700">57</td><td>M. Chen</td><td style="color:#ff8a65">30%</td><td style="color:#ff8a65;font-family:'DM Mono',monospace">=ARR x (1-Save%)</td><td><span class="ws-tag" style="background:rgba(220,50,50,0.25);color:#ff6b6b">🔴 57 days</span></td></tr>
+          <tr style="background:rgba(255,255,255,0.02)"><td style="color:#ffd54f;font-weight:700">Sprouts</td><td style="color:#ffd54f">285</td><td>Aug 20 2025</td><td><span class="ws-tag ws-tag-t2">Lane 2 — Silent</span></td><td style="color:#ffd54f;font-family:'DM Mono',monospace;font-weight:700">58%</td><td style="color:rgba(255,255,255,0.4)">Low CSAT 3.2</td><td>Feature plateau, slow responses</td><td style="color:#ffd54f">202</td><td>J. Patel</td><td style="color:#6ecfa0">55%</td><td style="color:#ffd54f;font-family:'DM Mono',monospace">=ARR x (1-Save%)</td><td><span class="ws-tag" style="background:rgba(255,140,0,0.2);color:#ffd54f">🟠 Monitoring</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="ws-onboard" class="ws-panel">
+      <div style="margin-bottom:8px;font-family:'DM Mono',monospace;font-size:0.62rem;color:var(--gold);letter-spacing:0.1em;text-transform:uppercase">30-60-90 Day Milestone Framework · TTV Target: 45 Days</div>
+      <table class="ws-grid">
+        <thead><tr><th>Account</th><th>Tier</th><th>CSM</th><th>Contract Date</th><th>Day #</th><th>TTV Target</th><th>Phase</th><th>% Done</th><th>Kickoff</th><th>Setup</th><th>Training</th><th>First Value</th><th>30-Day Check</th><th>TTV Achieved?</th><th>CSAT</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td style="color:rgba(255,255,255,0.9);font-weight:600">Sprouts Expansion</td><td><span class="ws-tag ws-tag-t2">Mid-Market</span></td><td>J. Patel</td><td>Jan 06 2025</td><td style="color:var(--gold)">39</td><td>45d</td><td>Day 30–45</td><td style="color:#6ecfa0;font-family:'DM Mono',monospace">80%</td><td style="color:#6ecfa0">✅</td><td style="color:#6ecfa0">✅</td><td style="color:#6ecfa0">✅</td><td style="color:#6ecfa0">✅</td><td style="color:#6ecfa0">✅</td><td style="color:#ffd54f">🔄 Pending</td><td style="color:#6ecfa0">4.4</td><td><span class="ws-tag ws-tag-applied">🟢 On Track</span></td></tr>
+          <tr style="background:rgba(255,255,255,0.02)"><td style="color:rgba(255,255,255,0.9);font-weight:600">Fresh Market</td><td><span class="ws-tag ws-tag-t2">Mid-Market</span></td><td>J. Patel</td><td>Jan 20 2025</td><td style="color:var(--gold)">25</td><td>45d</td><td>Day 21–30</td><td style="color:#6ecfa0;font-family:'DM Mono',monospace">60%</td><td style="color:#6ecfa0">✅</td><td style="color:#6ecfa0">✅</td><td style="color:#6ecfa0">✅</td><td style="color:#ffd54f">🔄</td><td style="color:rgba(255,255,255,0.3)">⏳</td><td style="color:rgba(255,255,255,0.3)">⏳</td><td style="color:#6ecfa0">4.6</td><td><span class="ws-tag ws-tag-applied">🟢 On Track</span></td></tr>
+          <tr><td style="color:rgba(255,255,255,0.9);font-weight:600">New Client A</td><td><span class="ws-tag ws-tag-t1">Enterprise</span></td><td>T. Williams</td><td>Jan 10 2025</td><td style="color:#ffd54f">35</td><td>45d</td><td>Day 30 Check</td><td style="color:#ffd54f;font-family:'DM Mono',monospace">60%</td><td style="color:#6ecfa0">✅</td><td style="color:#6ecfa0">✅</td><td style="color:#6ecfa0">✅</td><td style="color:#6ecfa0">✅</td><td style="color:#ffd54f">🔄</td><td style="color:rgba(255,255,255,0.3)">⏳</td><td style="color:#ffd54f">4.1</td><td><span class="ws-tag" style="background:rgba(255,193,7,0.15);color:#ffd54f">🟡 Watch</span></td></tr>
+          <tr style="background:rgba(255,255,255,0.02)"><td style="color:#ff8a65;font-weight:600">New Client B</td><td><span class="ws-tag ws-tag-t3">Growth</span></td><td>M. Chen</td><td>Dec 15 2024</td><td style="color:#ff6b6b;font-weight:700">61</td><td>45d</td><td style="color:#ff6b6b">TTV Overdue</td><td style="color:#ff6b6b;font-family:'DM Mono',monospace">100%</td><td style="color:#6ecfa0">✅</td><td style="color:#6ecfa0">✅</td><td style="color:#6ecfa0">✅</td><td style="color:#6ecfa0">✅</td><td style="color:#6ecfa0">✅</td><td style="color:#ff6b6b;font-weight:700">❌ Overdue</td><td style="color:#ff8a65">3.8</td><td><span class="ws-tag" style="background:rgba(220,50,50,0.2);color:#ff6b6b">🔴 TTV Exceeded</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="education">
+  <div class="edu-inner">
+    <div class="section-label reveal">Education &amp; Credentials</div>
+    <h2 class="section-title reveal">Credentials that <em>differentiate</em></h2>
+    <div class="edu-grid">
+      <div class="edu-card reveal"><div class="edu-school">Syracuse University</div><div class="edu-degree">Master of Science, Business Analytics</div><div class="edu-detail">Quantitative methods, predictive modeling, and data-driven business strategy — the analytical foundation behind every dashboard, health score, and retention framework.</div></div>
+      <div class="edu-card reveal"><div class="edu-school">Purdue University</div><div class="edu-degree">Bachelor of Arts, Business Administration</div><div class="edu-detail">Core business strategy, operations management, and organizational leadership.</div></div>
+    </div>
+    <div class="cert-row reveal">
+      <span class="cert-tag">Lean Six Sigma Green Belt</span>
+      <span class="cert-tag">Google Data Analytics</span>
+      <span class="cert-tag">Women in Leadership</span>
+      <span class="cert-tag">Frontline Management</span>
+      <span class="cert-tag">Series 6 &amp; 7</span>
+      <span class="cert-tag">CompTIA A+</span>
+      <span class="cert-tag">Open to Remote</span>
+    </div>
+  </div>
+</div>
+
+<div class="resources-section">
+  <div class="resources-inner">
+    <div class="section-label reveal">Downloads &amp; Resources</div>
+    <h2 class="section-title reveal">Tools, frameworks &amp; <em>resources</em></h2>
+    <div class="resources-grid">
+      <a href="Cernice_Robinson_Resume_v5.docx" download class="resource-card reveal">
+        <div class="resource-icon">📄</div>
+        <div class="resource-type">Download · DOCX</div>
+        <div class="resource-title">Full Resume</div>
+        <div class="resource-desc">Complete resume with 10+ years of CS leadership experience — enterprise accounts, BPO operations, team development, and program architecture.</div>
+        <div class="resource-cta">Download Resume <span class="resource-cta-arrow">→</span></div>
+      </a>
+      <a href="Cernice_Robinson_CS_Brief.docx" download class="resource-card reveal">
+        <div class="resource-icon">⚡</div>
+        <div class="resource-type">Download · One-Pager</div>
+        <div class="resource-title">CS Leadership Brief</div>
+        <div class="resource-desc">A single-page distillation of my CS leadership philosophy, the five frameworks I build, and the metrics that result — designed for quick review by hiring managers.</div>
+        <div class="resource-cta">Download Brief <span class="resource-cta-arrow">→</span></div>
+      </a>
+      <a href="#competencies" class="resource-card reveal">
+        <div class="resource-icon">📊</div>
+        <div class="resource-type">Preview · View Only</div>
+        <div class="resource-title">CS Leadership Operational Worksheet</div>
+        <div class="resource-desc">A 5-tab working system — health scoring dashboard, QBR planning, team performance scorecard, churn risk early warning, and onboarding tracker. Available for viewing on this site only.</div>
+        <div class="resource-cta">View Preview Above <span class="resource-cta-arrow">↑</span></div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<section id="contact">
+  <div class="contact-left reveal">
+    <div class="section-label">Contact</div>
+    <h2 class="section-title">Let's build something <em>together</em></h2>
+    <p class="contact-body">I'm actively exploring Director-level Customer Success and Client Experience roles — ideally remote-first, at a B2B SaaS, BPO, HR tech, or remote staffing company where CS is positioned as a revenue function, not a support cost.</p>
+    <div class="contact-links">
+      <a href="mailto:crobins26@gmail.com" class="contact-link">
+        <span class="contact-link-icon">✉</span>
+        crobins26@gmail.com
+      </a>
+      <a href="https://linkedin.com/in/cernice-robinson" target="_blank" class="contact-link">
+        <span class="contact-link-icon">in</span>
+        linkedin.com/in/cernice-robinson
+      </a>
+      <a href="Cernice_Robinson_Resume_v5.docx" download class="contact-link">
+        <span class="contact-link-icon">↓</span>
+        Download Resume
+      </a>
+    </div>
+  </div>
+  <div class="contact-right reveal">
+    <div class="contact-availability"><div class="availability-dot"></div>Available for new opportunities</div>
+    <div class="contact-pitch">The right company gets a CS leader who builds <em>systems</em>, not just relationships.</div>
+    <div class="contact-details">
+      <div class="contact-detail-item"><span>Location</span><span>Chicago Metro Area (Hammond, IN)</span></div>
+      <div class="contact-detail-item"><span>Work Type</span><span>Remote · Open to Hybrid</span></div>
+      <div class="contact-detail-item"><span>Target Role</span><span>Director / Head of Customer Success</span></div>
+      <div class="contact-detail-item"><span>Industries</span><span>SaaS · BPO · Remote Staffing · HR Tech</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-name">Cernice Robinson — Director of Customer Success</div>
+  <div class="footer-copy">Chicago Metro · Open to Remote · 2025</div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 60);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  function wsSwitch(btn, panelId) {
+    document.querySelectorAll('.ws-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.ws-panel').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(panelId).classList.add('active');
+  }
+</script>
+</body>
+</html>
