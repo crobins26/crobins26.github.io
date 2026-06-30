@@ -54,3 +54,17 @@ If any of those show 404, the matching file or folder was not uploaded to the re
 ## Privacy note
 
 This portfolio uses fictional company names and synthetic data. It should not disclose real employer data, internal process details, confidential retailer relationships, or proprietary workflow logic.
+
+
+## Added Customer Success Training Files
+
+Confirm these files are uploaded at the repository root/folders exactly as shown:
+
+```text
+training.html
+files/customer-success-training-overview.pdf
+files/customer-success-module-01-preview.pdf
+assets/customer-success-training-preview.png
+```
+
+Do not upload only `index.html`. The download and image buttons need the `files/` and `assets/` folders too.

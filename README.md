@@ -41,3 +41,14 @@ All downloadable examples use fictional company names, synthetic data, and simul
 ## Deployment reminder
 
 Upload the files and folders to the root of the `crobins26.github.io` repository. Uploading only `index.html` will break the download buttons and dashboard image.
+
+
+## Customer Success Training Add-On
+
+This version includes a public-safe `training.html` page and two downloadable training assets:
+
+- `files/customer-success-training-overview.pdf`
+- `files/customer-success-module-01-preview.pdf`
+- `assets/customer-success-training-preview.png`
+
+Module 01 is intentionally limited. Full worksheets, scoring logic, facilitator notes, examples, answer keys, and private delivery materials are not included in the public repository.
