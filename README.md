@@ -1,39 +1,43 @@
-# Cernice Robinson - GitHub Pages Portfolio
+# Cernice Robinson Portfolio
 
-This repository contains a public-safe professional portfolio for Cernice Robinson.
+Public-safe GitHub Pages portfolio for Cernice Robinson.
 
 ## Positioning
 
-Strategic Sales Operations, Customer Success, CPG Retail Execution, DSD Operations, Analytics, Process Automation, and AI-Ready Transformation.
+Sales Operations · Customer Success · DSD / CPG Retail Execution · Analytics · Process Automation · AI-Ready Transformation
 
-## Confidentiality Standard
+## Public-safe portfolio approach
 
-The portfolio intentionally avoids real employer data, retailer files, customer records, pricing documents, PO details, internal screenshots, or confidential workflows.
+All downloadable examples use fictional company names, synthetic data, and simulated business scenarios. They are designed to demonstrate analytical thinking, operating system design, workflow improvement, dashboarding, and transformation leadership without exposing confidential employer information.
 
-All case studies, dashboards, company names, account names, PO numbers, and metrics in the downloadable portfolio files are fictional or synthetic examples created for public demonstration.
+## File structure
 
-Suggested public wording:
+```text
+/
+├── index.html
+├── 404.html
+├── README.md
+├── robots.txt
+├── sitemap.xml
+├── assets/
+│   ├── dashboard-preview.png
+│   └── dashboard_preview.png
+└── files/
+    ├── cernice-robinson-executive-capability-brief.pdf
+    ├── simulated-cpg-po-automation-case-study.pdf
+    ├── synthetic-dsd-kpi-dashboard.xlsx
+    ├── portfolio-project-catalog.pdf
+    └── legacy duplicate filenames for backward compatibility
+```
 
-> These portfolio projects use fictional company names and synthetic data. They are designed to demonstrate my approach to operational transformation, dashboard design, sales operations, customer success, and AI-ready workflow improvement without disclosing confidential employer or customer information.
+## Download links used by the website
 
-## Files Included
+- `./files/cernice-robinson-executive-capability-brief.pdf`
+- `./files/simulated-cpg-po-automation-case-study.pdf`
+- `./files/synthetic-dsd-kpi-dashboard.xlsx`
+- `./files/portfolio-project-catalog.pdf`
+- `./assets/dashboard-preview.png`
 
-- `index.html` - Main GitHub Pages portfolio site
-- `404.html` - Custom error page
-- `robots.txt` - Search crawler guidance
-- `sitemap.xml` - Basic sitemap
-- `assets/dashboard_preview.png` - Preview image from synthetic KPI workbook
-- `files/Cernice_Robinson_Executive_Capability_Brief.pdf` - Public executive capability brief
-- `files/Simulated_CPG_PO_Automation_Case_Study.pdf` - Fictional CPG workflow case study
-- `files/Synthetic_DSD_KPI_Dashboard.xlsx` - Synthetic Excel KPI dashboard workbook
-- `files/Portfolio_Project_Catalog.pdf` - Public-safe portfolio project catalog
+## Deployment reminder
 
-## Deployment
-
-Upload these files into the `crobins26.github.io` repository root, then commit changes to the main branch. GitHub Pages will serve the site from:
-
-`https://crobins26.github.io/`
-
-## Notes
-
-The formal resume can remain available by request rather than fully public if employer-specific detail should be controlled.
+Upload the files and folders to the root of the `crobins26.github.io` repository. Uploading only `index.html` will break the download buttons and dashboard image.
