@@ -3,24 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Cernice Robinson — Sales Operations, DSD, Customer Success, CPG Retail Execution, Analytics, and AI-Ready Process Transformation." />
+  <meta name="description" content="Cernice Robinson portfolio - sales operations, DSD retail execution, customer success, analytics, automation, and AI-ready transformation." />
   <meta name="author" content="Cernice Robinson" />
-  <meta property="og:title" content="Cernice Robinson | Strategic Sales Operations & Customer Success Leader" />
-  <meta property="og:description" content="Executive portfolio for CPG retail execution, DSD operations, customer success, analytics, automation, and transformation leadership." />
+  <meta property="og:title" content="Cernice Robinson | Sales Operations & Customer Success Portfolio" />
+  <meta property="og:description" content="Public-safe portfolio with synthetic case studies, KPI dashboard samples, and executive capability materials." />
   <meta property="og:type" content="website" />
-  <title>Cernice Robinson | Strategic Sales Operations & Customer Success Leader</title>
+  <title>Cernice Robinson | Sales Operations & Customer Success Portfolio</title>
   <style>
     :root {
-      --bg: #0f172a;
-      --bg-soft: #111c33;
-      --panel: rgba(255, 255, 255, 0.075);
-      --panel-strong: rgba(255, 255, 255, 0.115);
+      --bg: #08111f;
+      --bg-2: #0f172a;
+      --panel: rgba(255, 255, 255, 0.08);
+      --panel-strong: rgba(255, 255, 255, 0.13);
       --text: #f8fafc;
       --muted: #cbd5e1;
       --muted-2: #94a3b8;
       --accent: #f59e0b;
-      --accent-2: #22c55e;
-      --accent-3: #38bdf8;
+      --accent-2: #38bdf8;
+      --green: #22c55e;
       --line: rgba(255, 255, 255, 0.16);
       --shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
       --radius: 24px;
@@ -28,421 +28,121 @@
     }
 
     * { box-sizing: border-box; }
-
     html { scroll-behavior: smooth; }
-
     body {
       margin: 0;
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at 10% 10%, rgba(56, 189, 248, 0.20), transparent 32%),
-        radial-gradient(circle at 90% 15%, rgba(245, 158, 11, 0.20), transparent 28%),
-        linear-gradient(135deg, #08111f 0%, #0f172a 42%, #111827 100%);
+        radial-gradient(circle at 10% 10%, rgba(56, 189, 248, 0.18), transparent 32%),
+        radial-gradient(circle at 90% 15%, rgba(245, 158, 11, 0.18), transparent 28%),
+        linear-gradient(135deg, var(--bg) 0%, var(--bg-2) 48%, #111827 100%);
       min-height: 100vh;
       line-height: 1.55;
     }
 
     a { color: inherit; text-decoration: none; }
-
-    .skip-link {
-      position: absolute;
-      top: -100px;
-      left: 20px;
-      background: var(--accent);
-      color: #111827;
-      padding: 10px 14px;
-      border-radius: 999px;
-      z-index: 20;
-    }
-
-    .skip-link:focus { top: 20px; }
-
+    p { margin-top: 0; }
     .site-shell { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
+    .skip-link { position: absolute; top: -100px; left: 20px; background: var(--accent); color: #111827; padding: 10px 14px; border-radius: 999px; z-index: 20; font-weight: 800; }
+    .skip-link:focus { top: 20px; }
 
     header {
       position: sticky;
       top: 0;
       z-index: 10;
       backdrop-filter: blur(18px);
-      background: rgba(8, 17, 31, 0.76);
+      background: rgba(8, 17, 31, 0.78);
       border-bottom: 1px solid var(--line);
     }
-
-    .nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-      padding: 18px 0;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-    }
-
-    .brand-mark {
-      display: grid;
-      place-items: center;
-      width: 42px;
-      height: 42px;
-      border-radius: 14px;
-      background: linear-gradient(135deg, var(--accent), var(--accent-3));
-      color: #07111f;
-      box-shadow: 0 14px 30px rgba(56, 189, 248, 0.24);
-    }
-
-    nav ul {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      color: var(--muted);
-      font-size: 0.94rem;
-    }
-
+    .nav { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 18px 0; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 900; letter-spacing: -0.02em; }
+    .brand-mark { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 14px; background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #07111f; box-shadow: 0 14px 30px rgba(56, 189, 248, 0.24); }
+    nav ul { display: flex; align-items: center; gap: 18px; list-style: none; padding: 0; margin: 0; color: var(--muted); font-size: 0.94rem; }
     nav a { opacity: 0.9; }
     nav a:hover { color: var(--accent); }
-
     .menu-button { display: none; }
 
-    .hero {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 34px;
-      padding: 82px 0 56px;
-      align-items: center;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      color: #fffbeb;
-      background: rgba(245, 158, 11, 0.16);
-      border: 1px solid rgba(245, 158, 11, 0.35);
-      padding: 8px 14px;
-      border-radius: 999px;
-      font-weight: 700;
-      font-size: 0.85rem;
-      margin-bottom: 22px;
-    }
-
+    .hero { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 34px; padding: 82px 0 50px; align-items: center; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 8px; color: #fffbeb; background: rgba(245, 158, 11, 0.16); border: 1px solid rgba(245, 158, 11, 0.35); padding: 8px 14px; border-radius: 999px; font-weight: 800; font-size: 0.85rem; margin-bottom: 22px; }
     h1, h2, h3 { line-height: 1.08; margin: 0; letter-spacing: -0.045em; }
-
-    h1 {
-      font-size: clamp(3rem, 7vw, 6.2rem);
-      max-width: 800px;
-    }
-
-    .hero h1 span { color: var(--accent); }
-
-    .hero-copy {
-      margin: 24px 0 30px;
-      max-width: 760px;
-      color: var(--muted);
-      font-size: clamp(1.05rem, 2vw, 1.28rem);
-    }
-
-    .hero-actions, .card-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      align-items: center;
-    }
-
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      min-height: 46px;
-      padding: 12px 18px;
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      color: var(--text);
-      background: rgba(255, 255, 255, 0.08);
-      font-weight: 800;
-      transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
-    }
-
+    h1 { font-size: clamp(3rem, 7vw, 6.15rem); max-width: 850px; }
+    h1 span, .accent { color: var(--accent); }
+    .hero-copy { margin: 24px 0 30px; max-width: 760px; color: var(--muted); font-size: clamp(1.05rem, 2vw, 1.28rem); }
+    .hero-actions, .card-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+    .button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 46px; padding: 12px 18px; border-radius: 999px; border: 1px solid var(--line); color: var(--text); background: rgba(255, 255, 255, 0.08); font-weight: 850; transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease; }
     .button:hover { transform: translateY(-2px); border-color: rgba(245, 158, 11, 0.55); }
     .button.primary { background: linear-gradient(135deg, var(--accent), #fbbf24); color: #111827; border-color: transparent; }
     .button.ghost { background: transparent; }
+    .button.small { min-height: 38px; padding: 9px 13px; font-size: 0.88rem; }
 
-    .hero-card {
-      padding: 26px;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.055));
-      box-shadow: var(--shadow);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-card::before {
-      content: "";
-      position: absolute;
-      inset: -80px -120px auto auto;
-      width: 220px;
-      height: 220px;
-      border-radius: 50%;
-      background: rgba(245, 158, 11, 0.22);
-      filter: blur(8px);
-    }
-
+    .hero-card { padding: 26px; border: 1px solid var(--line); border-radius: var(--radius); background: linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.055)); box-shadow: var(--shadow); position: relative; overflow: hidden; }
+    .hero-card::before { content: ""; position: absolute; inset: -80px -120px auto auto; width: 220px; height: 220px; border-radius: 50%; background: rgba(245, 158, 11, 0.22); filter: blur(8px); }
     .profile-block { position: relative; }
-
-    .profile-name {
-      font-size: 1.4rem;
-      font-weight: 900;
-      margin-bottom: 6px;
-    }
-
+    .profile-name { font-size: 1.42rem; font-weight: 950; margin-bottom: 6px; }
     .profile-title { color: var(--muted); margin-bottom: 18px; }
+    .signal-list { display: grid; gap: 10px; padding: 0; margin: 20px 0 0; list-style: none; }
+    .signal-list li { display: flex; gap: 10px; padding: 12px; border: 1px solid var(--line); border-radius: 16px; background: rgba(15, 23, 42, 0.36); color: var(--muted); }
+    .dot { flex: 0 0 9px; width: 9px; height: 9px; border-radius: 999px; margin-top: 8px; background: var(--green); box-shadow: 0 0 0 5px rgba(34, 197, 94, 0.12); }
 
-    .signal-list {
-      display: grid;
-      gap: 10px;
-      padding: 0;
-      margin: 20px 0 0;
-      list-style: none;
-    }
-
-    .signal-list li {
-      display: flex;
-      gap: 10px;
-      padding: 12px;
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      background: rgba(15, 23, 42, 0.36);
-      color: var(--muted);
-    }
-
-    .dot {
-      flex: 0 0 9px;
-      width: 9px;
-      height: 9px;
-      border-radius: 999px;
-      margin-top: 8px;
-      background: var(--accent-2);
-      box-shadow: 0 0 0 5px rgba(34, 197, 94, 0.12);
-    }
-
-    section { padding: 58px 0; }
-
-    .section-head {
-      display: grid;
-      gap: 12px;
-      max-width: 840px;
-      margin-bottom: 28px;
-    }
-
-    .section-label {
-      color: var(--accent);
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      font-weight: 900;
-      font-size: 0.78rem;
-    }
-
+    section { padding: 56px 0; }
+    .section-head { display: grid; gap: 12px; max-width: 870px; margin-bottom: 28px; }
+    .section-label { color: var(--accent); text-transform: uppercase; letter-spacing: 0.16em; font-weight: 950; font-size: 0.78rem; }
     h2 { font-size: clamp(2.1rem, 4vw, 3.7rem); }
+    .section-head p, .lead { color: var(--muted); font-size: 1.05rem; margin: 0; }
 
-    .section-head p, .lead {
-      color: var(--muted);
-      font-size: 1.05rem;
-      margin: 0;
-    }
+    .notice { padding: 18px 20px; border-radius: 20px; border: 1px solid rgba(245, 158, 11, 0.42); background: rgba(245, 158, 11, 0.12); color: #fffbeb; box-shadow: 0 14px 30px rgba(0,0,0,0.14); }
+    .notice strong { color: #fff7ed; }
 
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
-      margin-top: 26px;
-    }
-
-    .stat-card, .content-card, .timeline-item, .resource-card {
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: var(--panel);
-      box-shadow: 0 18px 44px rgba(0, 0, 0, 0.18);
-    }
-
+    .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 26px; }
+    .stat-card, .content-card, .timeline-item, .resource-card, .preview-card { border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel); box-shadow: 0 18px 44px rgba(0, 0, 0, 0.18); }
     .stat-card { padding: 22px; }
-    .stat-value { font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 950; letter-spacing: -0.06em; color: var(--accent); }
-    .stat-label { font-weight: 850; margin-top: 2px; }
+    .stat-value { font-size: clamp(1.65rem, 4vw, 2.85rem); font-weight: 950; letter-spacing: -0.06em; color: var(--accent); }
+    .stat-label { font-weight: 900; margin-top: 2px; }
     .stat-note { color: var(--muted-2); font-size: 0.91rem; margin-top: 8px; }
 
-    .two-col {
-      display: grid;
-      grid-template-columns: 0.95fr 1.05fr;
-      gap: 18px;
-      align-items: stretch;
-    }
-
+    .two-col { display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 18px; align-items: stretch; }
     .content-card { padding: 26px; }
     .content-card h3 { font-size: 1.35rem; margin-bottom: 12px; }
     .content-card p { color: var(--muted); margin: 0 0 16px; }
+    .pill-list { display: flex; flex-wrap: wrap; gap: 10px; padding: 0; margin: 16px 0 0; list-style: none; }
+    .pill-list li { border: 1px solid var(--line); border-radius: 999px; padding: 8px 12px; color: #e2e8f0; background: rgba(255, 255, 255, 0.055); font-weight: 750; font-size: 0.9rem; }
 
-    .pill-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      padding: 0;
-      margin: 16px 0 0;
-      list-style: none;
-    }
-
-    .pill-list li {
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 8px 12px;
-      color: #e2e8f0;
-      background: rgba(255, 255, 255, 0.055);
-      font-weight: 700;
-      font-size: 0.9rem;
-    }
-
-    .timeline {
-      display: grid;
-      gap: 18px;
-    }
-
-    .timeline-item {
-      padding: 24px;
-      display: grid;
-      grid-template-columns: 220px 1fr;
-      gap: 24px;
-    }
-
-    .timeline-meta {
-      color: var(--muted-2);
-      font-weight: 750;
-      font-size: 0.92rem;
-    }
-
+    .timeline { display: grid; gap: 18px; }
+    .timeline-item { padding: 24px; display: grid; grid-template-columns: 220px 1fr; gap: 24px; }
+    .timeline-meta { color: var(--muted-2); font-weight: 750; font-size: 0.92rem; }
     .timeline-item h3 { font-size: 1.35rem; margin-bottom: 8px; }
     .timeline-item p { color: var(--muted); margin: 0 0 12px; }
-
-    .bullet-list {
-      margin: 0;
-      padding-left: 19px;
-      color: var(--muted);
-    }
-
+    .bullet-list { margin: 0; padding-left: 19px; color: var(--muted); }
     .bullet-list li { margin-bottom: 8px; }
 
-    .skills-grid, .resources-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-    }
-
-    .icon {
-      display: grid;
-      place-items: center;
-      width: 48px;
-      height: 48px;
-      border-radius: 16px;
-      background: rgba(56, 189, 248, 0.12);
-      color: var(--accent-3);
-      font-size: 1.35rem;
-      margin-bottom: 18px;
-    }
-
-    .resource-card {
-      padding: 24px;
-      min-height: 240px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      gap: 18px;
-    }
-
+    .skills-grid, .resources-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .icon { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 16px; background: rgba(56, 189, 248, 0.12); color: var(--accent-2); font-size: 1.35rem; margin-bottom: 18px; }
+    .resource-card { padding: 24px; min-height: 260px; display: flex; flex-direction: column; justify-content: space-between; gap: 18px; }
     .resource-card h3 { font-size: 1.25rem; margin-bottom: 10px; }
     .resource-card p { color: var(--muted); margin: 0; }
+    .file-type { display: inline-flex; margin-bottom: 12px; padding: 5px 10px; border-radius: 999px; background: rgba(56, 189, 248, 0.14); border: 1px solid rgba(56, 189, 248, 0.35); color: #e0f2fe; font-size: 0.78rem; font-weight: 900; letter-spacing: 0.04em; }
 
-    .contact-panel {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 18px;
-      align-items: center;
-      padding: 30px;
-      border: 1px solid rgba(245, 158, 11, 0.35);
-      border-radius: calc(var(--radius) + 6px);
-      background:
-        linear-gradient(135deg, rgba(245, 158, 11, 0.20), rgba(56, 189, 248, 0.11)),
-        rgba(255, 255, 255, 0.075);
-      box-shadow: var(--shadow);
-    }
+    .preview-card { padding: 18px; overflow: hidden; }
+    .preview-card img { width: 100%; display: block; border-radius: 16px; border: 1px solid var(--line); background: #fff; }
+    .preview-caption { color: var(--muted); margin: 14px 4px 0; font-size: 0.96rem; }
 
+    .contact-panel { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 18px; align-items: center; padding: 30px; border: 1px solid rgba(245, 158, 11, 0.35); border-radius: calc(var(--radius) + 6px); background: linear-gradient(135deg, rgba(245, 158, 11, 0.20), rgba(56, 189, 248, 0.11)), rgba(255, 255, 255, 0.075); box-shadow: var(--shadow); }
     .contact-panel p { color: #e2e8f0; margin: 14px 0 0; }
+    .contact-list { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; color: var(--muted); }
+    .contact-list li { padding: 12px; border: 1px solid var(--line); border-radius: 16px; background: rgba(8, 17, 31, 0.30); }
 
-    .contact-list {
-      display: grid;
-      gap: 12px;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      color: var(--muted);
-    }
-
-    .contact-list li {
-      padding: 12px;
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      background: rgba(8, 17, 31, 0.30);
-    }
-
-    footer {
-      border-top: 1px solid var(--line);
-      padding: 28px 0;
-      color: var(--muted-2);
-      font-size: 0.92rem;
-    }
-
-    .footer-inner {
-      display: flex;
-      justify-content: space-between;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
+    footer { border-top: 1px solid var(--line); padding: 28px 0; color: var(--muted-2); font-size: 0.92rem; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 
     @media (max-width: 940px) {
       .hero, .two-col, .contact-panel { grid-template-columns: 1fr; }
       .stats-grid, .skills-grid, .resources-grid { grid-template-columns: repeat(2, 1fr); }
       .timeline-item { grid-template-columns: 1fr; }
-      nav ul {
-        position: absolute;
-        top: 78px;
-        left: 20px;
-        right: 20px;
-        display: none;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 18px;
-        border: 1px solid var(--line);
-        border-radius: 20px;
-        background: rgba(8, 17, 31, 0.97);
-      }
+      nav ul { position: absolute; top: 78px; left: 20px; right: 20px; display: none; flex-direction: column; align-items: flex-start; padding: 18px; border: 1px solid var(--line); border-radius: 20px; background: rgba(8, 17, 31, 0.97); }
       nav ul.open { display: flex; }
-      .menu-button {
-        display: inline-flex;
-        border: 1px solid var(--line);
-        background: rgba(255,255,255,0.08);
-        color: var(--text);
-        padding: 10px 13px;
-        border-radius: 999px;
-        font-weight: 800;
-      }
+      .menu-button { display: inline-flex; border: 1px solid var(--line); background: rgba(255,255,255,0.08); color: var(--text); padding: 10px 13px; border-radius: 999px; font-weight: 850; }
     }
-
     @media (max-width: 640px) {
       .site-shell { width: min(100% - 28px, var(--max)); }
       .hero { padding-top: 54px; }
@@ -468,7 +168,7 @@
           <li><a href="#impact">Impact</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#expertise">Expertise</a></li>
-          <li><a href="#resources">Resources</a></li>
+          <li><a href="#resources">Downloads</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -478,15 +178,15 @@
   <main id="main">
     <section class="hero site-shell" id="top">
       <div>
-        <div class="eyebrow">CPG Retail · DSD · Sales Operations · Customer Success</div>
+        <div class="eyebrow">CPG Retail · DSD · Sales Operations · Customer Success · Analytics</div>
         <h1>Turning retail complexity into <span>controlled execution.</span></h1>
         <p class="hero-copy">
-          I lead the systems behind revenue: DSD execution, enterprise retail account support, pricing and item workflows, PO operations, broker coordination, dashboards, and AI-ready process transformation.
+          I lead the systems behind revenue: DSD execution, enterprise account support, pricing and item workflows, PO operations, broker coordination, dashboards, and AI-ready process transformation.
         </p>
         <div class="hero-actions">
           <a class="button primary" href="mailto:crobins26@gmail.com">Contact Cernice</a>
-          <a class="button" href="#experience">View Experience</a>
-          <a class="button ghost" href="#resources">View Career Toolkit</a>
+          <a class="button" href="files/Cernice_Robinson_Executive_Capability_Brief.pdf" download>Download Capability Brief</a>
+          <a class="button ghost" href="#resources">View Portfolio Files</a>
         </div>
       </div>
 
@@ -495,15 +195,21 @@
           <div class="profile-name">Cernice “Niecy” Robinson</div>
           <div class="profile-title">Strategic Sales Operations & Customer Success Leader</div>
           <p class="lead">
-            Chicago Metro / Hammond, Indiana · Open to remote, hybrid, and senior-level roles where operations, analytics, customer outcomes, and transformation meet.
+            Hammond, Indiana / Chicago Metro · Open to remote, hybrid, and senior-level roles where operations, analytics, customer outcomes, and transformation meet.
           </p>
           <ul class="signal-list">
-            <li><span class="dot"></span><span><strong>$550M+ operational revenue supported</strong> across retail, CPG, and distribution workflows.</span></li>
-            <li><span class="dot"></span><span><strong>Enterprise retail partner fluency</strong> including Albertsons, Safeway, Kroger, Jewel-Osco, Walmart, Meijer, CVS, and KeHE.</span></li>
-            <li><span class="dot"></span><span><strong>Analytics-led operator</strong> using Excel, Tableau, Power BI, SAP, Power Automate, Planner, and retailer portals to make work visible.</span></li>
+            <li><span class="dot"></span><span><strong>Sales operations leader</strong> with CPG, retail execution, customer success, and analytics experience.</span></li>
+            <li><span class="dot"></span><span><strong>Systems thinker</strong> who turns process noise into dashboards, SOPs, controls, and team operating rhythm.</span></li>
+            <li><span class="dot"></span><span><strong>Public-safe portfolio</strong> built with fictional companies and synthetic data to protect confidentiality.</span></li>
           </ul>
         </div>
       </aside>
+    </section>
+
+    <section class="site-shell" id="privacy">
+      <div class="notice">
+        <strong>Portfolio privacy note:</strong> Case studies, dashboards, and downloadable samples on this site use fictional company names, synthetic metrics, and academic-style business scenarios. They demonstrate my thinking and operating approach without exposing employer data, retailer records, customer files, pricing details, internal workflows, or confidential documents.
+      </div>
     </section>
 
     <section class="site-shell" id="impact">
@@ -516,24 +222,24 @@
       </div>
       <div class="stats-grid">
         <div class="stat-card">
-          <div class="stat-value">$550M+</div>
-          <div class="stat-label">Operational Revenue Supported</div>
-          <div class="stat-note">Cross-functional sales, DSD, order, pricing, and retail execution support.</div>
+          <div class="stat-value">CPG</div>
+          <div class="stat-label">Retail Execution</div>
+          <div class="stat-note">Direct-store-delivery, account requirements, item/pricing workflow, and exception visibility.</div>
         </div>
         <div class="stat-card">
-          <div class="stat-value">10+</div>
-          <div class="stat-label">Years Leading Customer & Account Work</div>
-          <div class="stat-note">Customer success, sales leadership, account management, analytics, and operations.</div>
+          <div class="stat-value">Ops</div>
+          <div class="stat-label">Process Control</div>
+          <div class="stat-note">Workflow mapping, SOPs, task accountability, governance, and escalation design.</div>
         </div>
         <div class="stat-card">
-          <div class="stat-value">200+</div>
-          <div class="stat-label">Enterprise / Retail Account Touchpoints</div>
-          <div class="stat-note">National and regional retail environments with complex item and execution requirements.</div>
+          <div class="stat-value">BI</div>
+          <div class="stat-label">Analytics & Dashboards</div>
+          <div class="stat-note">Excel, Tableau, Power BI, KPI frameworks, scorecards, and executive summaries.</div>
         </div>
         <div class="stat-card">
           <div class="stat-value">AI</div>
-          <div class="stat-label">Readiness & Automation Lens</div>
-          <div class="stat-note">Process mapping, adoption friction, workflow automation, dashboards, and team enablement.</div>
+          <div class="stat-label">Readiness & Automation</div>
+          <div class="stat-note">Process improvement, adoption friction, human-in-the-loop design, and tool enablement.</div>
         </div>
       </div>
     </section>
@@ -546,10 +252,10 @@
         </div>
         <div class="content-card">
           <p>
-            I am a sales operations and customer success leader with deep experience in CPG food distribution, direct store delivery, enterprise retail execution, business analytics, and operational transformation. My lane is where revenue promises become operational reality: item setup, pricing, POs, broker communication, account visibility, exception management, and team accountability.
+            I am a sales operations and customer success leader with experience in CPG food distribution, direct-store-delivery execution, business analytics, process improvement, and operational transformation. My lane is where revenue promises become operational reality: item setup, pricing movement, PO visibility, account communication, exception management, and team accountability.
           </p>
           <p>
-            I bring the rare mix of field-commercial judgment and systems thinking. I can speak the language of retailers, brokers, finance, sales, operations, and technology — then turn the noise into a process people can actually follow.
+            I bring the mix of commercial judgment and systems thinking. I can speak the language of sales, operations, finance, brokers, customers, and technology — then turn the noise into a process people can actually follow.
           </p>
           <ul class="pill-list" aria-label="Core strengths">
             <li>DSD Sales Operations</li>
@@ -571,39 +277,36 @@
         <h2>Leadership across sales, operations, analytics, and customer outcomes.</h2>
         <p>Current positioning can flex for Director of Sales Operations, Customer Success, Client Operations, Retail Execution, Business Operations, or Transformation roles.</p>
       </div>
-
       <div class="timeline">
         <article class="timeline-item">
-          <div class="timeline-meta">Global Market Foods / Ziyad Brothers Importing<br />Current</div>
+          <div class="timeline-meta">Current CPG Food Distribution Organization<br />Senior sales operations leadership</div>
           <div>
             <h3>Sales Manager / Mainstream Sales & DSD Operations</h3>
-            <p>Lead execution across enterprise retail accounts, DSD workflows, pricing communication, item setup, PO visibility, broker coordination, and sales operations improvement.</p>
+            <p>Lead execution across enterprise account support, DSD workflows, pricing communication, item setup, PO visibility, broker coordination, and sales operations improvement.</p>
             <ul class="bullet-list">
-              <li>Support operational revenue across mainstream sales channels with attention to execution risk, speed, accuracy, and retailer compliance.</li>
-              <li>Partner with sales leadership, brokers, retailers, finance, operations, and data teams to improve communication and reduce workflow breakdowns.</li>
+              <li>Support large-scale commercial operations with attention to execution risk, speed, accuracy, and account requirements.</li>
+              <li>Partner with sales leadership, brokers, customers, finance, operations, and data teams to improve communication and reduce workflow breakdowns.</li>
               <li>Design practical KPI structures for DSD performance, store execution, PO entry, pricing timelines, and exception visibility.</li>
               <li>Translate messy operational patterns into dashboards, SOPs, trackers, and automation-ready processes.</li>
             </ul>
           </div>
         </article>
-
         <article class="timeline-item">
-          <div class="timeline-meta">Global Market Foods / Ziyad Brothers Importing<br />Prior Role</div>
+          <div class="timeline-meta">Prior internal role<br />Analytics and client operations</div>
           <div>
-            <h3>Senior Business Analyst & Client Operations Leader</h3>
+            <h3>Business Analytics & Client Operations Leadership</h3>
             <p>Built reporting logic, analytical views, and operational tools that improved how teams saw revenue, order, pricing, and customer/account movement.</p>
             <ul class="bullet-list">
               <li>Created and refined dashboards, scorecards, and trackers to help leadership spot gaps earlier and prioritize action.</li>
               <li>Connected business analytics with practical execution needs across sales, customer service, operations, and retail account management.</li>
-              <li>Used Excel, Tableau, SAP data, and process documentation to make operational performance measurable and easier to manage.</li>
+              <li>Used Excel, Tableau, SAP-style data, and process documentation to make operational performance measurable and easier to manage.</li>
             </ul>
           </div>
         </article>
-
         <article class="timeline-item">
-          <div class="timeline-meta">BPO / Remote Operations / Digital Commerce</div>
+          <div class="timeline-meta">BPO / remote operations / digital commerce</div>
           <div>
-            <h3>Customer Success, Account Leadership & Sales Team Management</h3>
+            <h3>Customer Success, Account Leadership & Team Management</h3>
             <p>Earlier leadership foundation in customer success, remote operations, account management, performance coaching, and revenue ownership.</p>
             <ul class="bullet-list">
               <li>Led customer-facing operations where retention, service quality, stakeholder communication, and accountability were tied directly to revenue outcomes.</li>
@@ -621,67 +324,58 @@
         <h2>Where I create leverage.</h2>
       </div>
       <div class="skills-grid">
-        <article class="content-card">
-          <div class="icon">📦</div>
-          <h3>DSD & Retail Execution</h3>
-          <p>Store-level execution, planogram awareness, broker coordination, retailer portals, pricing deadlines, item setup, and account-specific requirements.</p>
-        </article>
-        <article class="content-card">
-          <div class="icon">📊</div>
-          <h3>Analytics & Dashboarding</h3>
-          <p>Executive-ready scorecards, KPI frameworks, trend visibility, Tableau, Power BI, Excel, SAP data, and decision support for sales leadership.</p>
-        </article>
-        <article class="content-card">
-          <div class="icon">⚙️</div>
-          <h3>Process Automation</h3>
-          <p>PO intake workflows, Planner and Excel systems, Power Automate logic, SharePoint file governance, dedupe controls, and audit-ready process design.</p>
-        </article>
-        <article class="content-card">
-          <div class="icon">🤝</div>
-          <h3>Customer Success & Account Health</h3>
-          <p>Stakeholder alignment, customer risk visibility, retention thinking, QBR-style account reviews, customer escalation handling, and relationship systems.</p>
-        </article>
-        <article class="content-card">
-          <div class="icon">🧭</div>
-          <h3>Transformation Leadership</h3>
-          <p>Change readiness, resistance mapping, SOP adoption, team enablement, AI readiness, and turning innovation anxiety into practical movement.</p>
-        </article>
-        <article class="content-card">
-          <div class="icon">🎓</div>
-          <h3>Education & Credentials</h3>
-          <p>Master’s in Business Analytics, Bachelor’s in Business Administration, 1WorldSync certification, Google Data Analytics, and frontline leadership training.</p>
-        </article>
+        <article class="content-card"><div class="icon">📦</div><h3>DSD & Retail Execution</h3><p>Store-level execution, planogram awareness, broker coordination, customer requirements, pricing deadlines, item setup, and account-specific workflow discipline.</p></article>
+        <article class="content-card"><div class="icon">📊</div><h3>Analytics & Dashboarding</h3><p>Executive-ready scorecards, KPI frameworks, trend visibility, Tableau, Power BI, Excel, SAP-style data, and decision support for sales leadership.</p></article>
+        <article class="content-card"><div class="icon">⚙️</div><h3>Process Automation</h3><p>PO intake workflows, Planner and Excel systems, Power Automate logic, SharePoint file governance, dedupe controls, and audit-ready process design.</p></article>
+        <article class="content-card"><div class="icon">🤝</div><h3>Customer Success & Account Health</h3><p>Stakeholder alignment, customer risk visibility, retention thinking, QBR-style account reviews, customer escalation handling, and relationship systems.</p></article>
+        <article class="content-card"><div class="icon">🧭</div><h3>Transformation Leadership</h3><p>Change readiness, resistance mapping, SOP adoption, team enablement, AI readiness, and turning innovation anxiety into practical movement.</p></article>
+        <article class="content-card"><div class="icon">🎓</div><h3>Education & Credentials</h3><p>Master’s in Business Analytics, Bachelor’s in Business Administration, 1WorldSync certification, Google Data Analytics, and frontline leadership training.</p></article>
       </div>
     </section>
 
     <section class="site-shell" id="resources">
       <div class="section-head">
-        <div class="section-label">Career Toolkit</div>
-        <h2>Resources for hiring teams.</h2>
-        <p>These cards can later connect to PDFs, dashboards, case studies, or downloadable work samples stored in the repository.</p>
+        <div class="section-label">Downloadable Portfolio Files</div>
+        <h2>Working files hiring teams can open.</h2>
+        <p>These are public-safe artifacts. The case studies and dashboard use fictional company names and synthetic data only.</p>
       </div>
       <div class="resources-grid">
         <article class="resource-card">
-          <div>
-            <h3>Executive Resume</h3>
-            <p>Director-level resume positioning across sales operations, customer success, client operations, analytics, and transformation leadership.</p>
-          </div>
+          <div><span class="file-type">PDF</span><h3>Executive Capability Brief</h3><p>A concise leadership profile for sales operations, customer success, analytics, transformation, and AI-ready workflow improvement.</p></div>
+          <div class="card-actions"><a class="button" href="files/Cernice_Robinson_Executive_Capability_Brief.pdf" download>Download Brief</a></div>
+        </article>
+        <article class="resource-card">
+          <div><span class="file-type">PDF</span><h3>Simulated PO Automation Case Study</h3><p>Fictional CPG distributor scenario showing PO intake design, dedupe controls, KPI logic, governance, and operating rhythm.</p></div>
+          <div class="card-actions"><a class="button" href="files/Simulated_CPG_PO_Automation_Case_Study.pdf" download>Download Case Study</a></div>
+        </article>
+        <article class="resource-card">
+          <div><span class="file-type">XLSX</span><h3>Synthetic DSD KPI Dashboard</h3><p>Excel workbook with synthetic account, store execution, PO aging, exception, and dashboard views.</p></div>
+          <div class="card-actions"><a class="button" href="files/Synthetic_DSD_KPI_Dashboard.xlsx" download>Download Workbook</a></div>
+        </article>
+        <article class="resource-card">
+          <div><span class="file-type">PDF</span><h3>Portfolio Project Catalog</h3><p>A simple catalog of simulated projects and public-safe positioning language for interviews, GitHub, and LinkedIn.</p></div>
+          <div class="card-actions"><a class="button" href="files/Portfolio_Project_Catalog.pdf" download>Download Catalog</a></div>
+        </article>
+        <article class="resource-card">
+          <div><span class="file-type">EMAIL</span><h3>Resume Request</h3><p>For the formal resume, contact directly. The public site keeps employer-sensitive details light while still showing capability.</p></div>
           <div class="card-actions"><a class="button" href="mailto:crobins26@gmail.com?subject=Resume%20Request%20-%20Cernice%20Robinson">Request Resume</a></div>
         </article>
         <article class="resource-card">
-          <div>
-            <h3>DSD KPI System</h3>
-            <p>Store execution, pricing, PO entry, exception rate, service levels, broker response, account movement, and retailer compliance metrics.</p>
-          </div>
-          <div class="card-actions"><a class="button" href="#impact">View Metrics</a></div>
+          <div><span class="file-type">PNG</span><h3>Dashboard Preview</h3><p>Quick visual preview of the synthetic dashboard included in the Excel workbook.</p></div>
+          <div class="card-actions"><a class="button" href="assets/dashboard_preview.png" download>Download Preview</a></div>
         </article>
-        <article class="resource-card">
-          <div>
-            <h3>Automation Case Study</h3>
-            <p>PO intake and task visibility system using Outlook, Planner, Excel, SharePoint, Power Automate logic, dedupe controls, and audit-ready governance.</p>
-          </div>
-          <div class="card-actions"><a class="button" href="mailto:crobins26@gmail.com?subject=Automation%20Case%20Study%20Request">Request Details</a></div>
-        </article>
+      </div>
+    </section>
+
+    <section class="site-shell" id="dashboard-preview">
+      <div class="section-head">
+        <div class="section-label">Sample Dashboard</div>
+        <h2>Synthetic view, real operating logic.</h2>
+        <p>The screenshot below is generated from the downloadable workbook. Fictional account names and synthetic values keep the example safe for public sharing.</p>
+      </div>
+      <div class="preview-card">
+        <img src="assets/dashboard_preview.png" alt="Synthetic DSD and sales operations KPI dashboard preview" />
+        <p class="preview-caption">Sample Excel dashboard showing on-time PO entry, DSD execution score, exception rate, duplicate flag rate, and PO aging.</p>
       </div>
     </section>
 
@@ -707,7 +401,7 @@
   <footer>
     <div class="site-shell footer-inner">
       <span>© <span id="year"></span> Cernice Robinson. All rights reserved.</span>
-      <span>Built for GitHub Pages · crobins26.github.io</span>
+      <span>Built for GitHub Pages · synthetic portfolio artifacts only</span>
     </div>
   </footer>
 
