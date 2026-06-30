@@ -1,21 +1,23 @@
-# File Manifest
+# Final Manifest
 
-- `404.html`
-- `DEPLOYMENT_STEPS.md`
-- `README.md`
-- `VERIFY_LINKS.md`
-- `assets/customer-success-training-preview.png`
-- `assets/dashboard-preview.png`
-- `assets/dashboard_preview.png`
-- `files/Cernice_Robinson_Executive_Capability_Brief.pdf`
-- `files/Portfolio_Project_Catalog.pdf`
-- `files/Simulated_CPG_PO_Automation_Case_Study.pdf`
-- `files/Synthetic_DSD_KPI_Dashboard.xlsx`
-- `files/cernice-robinson-executive-capability-brief.pdf`
-- `files/customer-success-module-01-preview.pdf`
-- `files/customer-success-training-overview.pdf`
-- `files/portfolio-project-catalog.pdf`
-- `files/simulated-cpg-po-automation-case-study.pdf`
-- `files/synthetic-dsd-kpi-dashboard.xlsx`
-- `index.html`
-- `training.html`
+## Root
+- index.html
+- 404.html
+- README.md
+- DEPLOYMENT_STEPS.md
+- VERIFY_LINKS.md
+
+## Assets
+- assets/dashboard-preview.png
+- assets/customer-success-training-preview.png
+
+## Files
+- files/cernice-robinson-executive-capability-brief.pdf
+- files/simulated-cpg-po-automation-case-study.pdf
+- files/synthetic-dsd-kpi-dashboard.xlsx
+- files/portfolio-project-catalog.pdf
+- files/customer-success-training-overview.pdf
+
+## Removed intentionally
+- training.html
+- files/customer-success-module-01-preview.pdf
