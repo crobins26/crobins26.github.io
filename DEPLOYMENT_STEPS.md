@@ -1,16 +1,19 @@
-# Deployment Steps
+# Deployment steps
 
-1. Open the final ZIP.
-2. Upload the contents of the ZIP to the root of `crobins26/crobins26.github.io`.
-3. Confirm these folders exist at the root: `files/` and `assets/`.
-4. Commit changes to `main`.
-5. Wait a few minutes for GitHub Pages to refresh.
+1. Open the ZIP on your computer.
+2. Go to GitHub: `crobins26/crobins26.github.io`.
+3. Upload the contents of this folder to the repository root. Do not upload the ZIP itself.
+4. Confirm these exist at the top level:
+   - `index.html`
+   - `files/`
+   - `assets/`
+   - `404.html`
+   - `README.md`
+   - `VERIFY_LINKS.md`
+5. Delete the old `training.html` file if it is still in the repo.
+6. Delete `files/customer-success-module-01-preview.pdf` if it is still in the repo.
+7. Commit to `main`.
+8. Wait 1-3 minutes for GitHub Pages to refresh.
+9. Use `VERIFY_LINKS.md` to test the live links.
 
-## Delete old files from the repository
-If they exist in GitHub, delete these because the training page gave away too much:
-
-- `training.html`
-- `files/customer-success-module-01-preview.pdf`
-
-## Upload rule
-Upload the files and folders inside the ZIP, not the ZIP itself.
+Note: the customer success training is now represented only by a protected design brief. It shows Cernice Robinson's curriculum design skill without giving away the actual training product.
